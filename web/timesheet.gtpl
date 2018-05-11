@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    display: inline-block;
+    width: 14%;
+    #font-size: 15px;
+}
+
+td, th {
+    border: 2px solid black;
+    text-align: left;
+    padding: 1px;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Jmainguy</h2>
+<form enctype="multipart/form-data" action="/timesheet" method="post">
+	<table>
+  		<tr bgcolor='#dddddd'>
+    		<th><center>Monday<br>05/07/2018</center></th>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<th><center>Aide Name</center></th>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td><b>ADL Mobility</b></td>
+  		</tr>
+    	<tr>
+    		<td>___Assist with ambulation<select name="assistWithAmbulation">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Bathing</td>
+  		</tr>
+    	<tr>
+    		<td>___Full body Bath<select name="fullBodyBath">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Shampoo hair<select name="shampooHair">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Special skin care<select name="specialSkinCare">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Dressing</td>
+  		</tr>
+    	<tr>
+    		<td>___Retrieve Clothes<select name="retrieveClothes">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Put on/Take off Clothes<select name="putOnTakeOffClothes">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Assist w/fasteners.zippers.buttons<select name="assistWithFastenersZippersButtons">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Put stocking/socks/shoes on/off<select name="putStockingSocksShoesOnOff">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Toileting</td>
+  		</tr>
+    	<tr>
+    		<td>___Assist with Toileting<select name="assistWithToileting">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Incontinence care<select name="incontinenceCare">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Clean Perineum<select name="cleanPerineum">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Change clothing/linens r/t incont<select name="changeClothingLinens">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>Medical Monitoring/TX</td>
+  		</tr>
+    	<tr>
+    		<td>___Reminders needed with meds<select name="remindersNeededWithMeds">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Blood pressure ___/___<select name="bloodPressure">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Range of motion<select name="rangeOfMotion">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Encourage physical activity daily if<select name="encouragePhysicalActivity">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>IADL Meal Prep</td>
+  		</tr>
+    	<tr>
+    		<td>___Prepare two meals<select name="prepareTwoMeals">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Take out trash<select name="takeOutTrash">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Wash dishes/tidy after meals<select name="washDishesTidyAfterMeals">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Clean kitchen<select name="cleanKitchen">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>IADL Home Management</td>
+  		</tr>
+    	<tr>
+    		<td>___Bathroom- tidy after bath<select name="bathroomTidyAfterBath">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Clean bathroom<select name="cleanBathroom">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Make bed<select name="makeBed">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Sweep<select name="sweep">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Dust bedroom/Living area<select name="dustBedroomLivingArea">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Keep free of clutter<select name="keepFreeOfClutter">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Tidy bedroom/living area<select name="tidyBedroomLivingArea">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>Other Tasks</td>
+  		</tr>
+    	<tr>
+    		<td>___Nail care<select name="nailCare">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+	</table>
+	<table>
+  		<tr bgcolor='#dddddd'>
+    		<th><center>Tuesday<br>05/08/2018</center></th>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<th><center>Aide Name</center></th>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Mobility</td>
+  		</tr>
+    	<tr>
+    		<td>___Assist with ambulation<select name="assistWithAmbulation">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Bathing</td>
+  		</tr>
+    	<tr>
+    		<td>___Full body Bath<select name="fullBodyBath">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Shampoo hair<select name="shampooHair">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Special skin care<select name="specialSkinCare">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Dressing</td>
+  		</tr>
+    	<tr>
+    		<td>___Retrieve Clothes<select name="retrieveClothes">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Put on/Take off Clothes<select name="putOnTakeOffClothes">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Assist w/fasteners.zippers.buttons<select name="assistWithFastenersZippersButtons">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Put stocking/socks/shoes on/off<select name="putStockingSocksShoesOnOff">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Toileting</td>
+  		</tr>
+    	<tr>
+    		<td>___Assist with Toileting<select name="assistWithToileting">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Incontinence care<select name="incontinenceCare">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Clean Perineum<select name="cleanPerineum">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Change clothing/linens r/t incont<select name="changeClothingLinens">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>Medical Monitoring/TX</td>
+  		</tr>
+    	<tr>
+    		<td>___Reminders needed with meds<select name="remindersNeededWithMeds">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Blood pressure ___/___<select name="bloodPressure">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Range of motion<select name="rangeOfMotion">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Encourage physical activity daily if<select name="encouragePhysicalActivity">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>IADL Meal Prep</td>
+  		</tr>
+    	<tr>
+    		<td>___Prepare two meals<select name="prepareTwoMeals">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Take out trash<select name="takeOutTrash">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Wash dishes/tidy after meals<select name="washDishesTidyAfterMeals">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Clean kitchen<select name="cleanKitchen">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>IADL Home Management</td>
+  		</tr>
+    	<tr>
+    		<td>___Bathroom- tidy after bath<select name="bathroomTidyAfterBath">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Clean bathroom<select name="cleanBathroom">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Make bed<select name="makeBed">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Sweep<select name="sweep">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Dust bedroom/Living area<select name="dustBedroomLivingArea">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Keep free of clutter<select name="keepFreeOfClutter">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Tidy bedroom/living area<select name="tidyBedroomLivingArea">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>Other Tasks</td>
+  		</tr>
+    	<tr>
+    		<td>___Nail care<select name="nailCare">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+	</table>
+	<table>
+  		<tr bgcolor='#dddddd'>
+    		<th><center>Wednesday<br>05/09/2018</center></th>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<th><center>Aide Name</center></th>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Mobility</td>
+  		</tr>
+    	<tr>
+    		<td>___Assist with ambulation<select name="assistWithAmbulation">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Bathing</td>
+  		</tr>
+    	<tr>
+    		<td>___Full body Bath<select name="fullBodyBath">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Shampoo hair<select name="shampooHair">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Special skin care<select name="specialSkinCare">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Dressing</td>
+  		</tr>
+    	<tr>
+    		<td>___Retrieve Clothes<select name="retrieveClothes">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Put on/Take off Clothes<select name="putOnTakeOffClothes">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Assist w/fasteners.zippers.buttons<select name="assistWithFastenersZippersButtons">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Put stocking/socks/shoes on/off<select name="putStockingSocksShoesOnOff">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Toileting</td>
+  		</tr>
+    	<tr>
+    		<td>___Assist with Toileting<select name="assistWithToileting">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Incontinence care<select name="incontinenceCare">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Clean Perineum<select name="cleanPerineum">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Change clothing/linens r/t incont<select name="changeClothingLinens">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>Medical Monitoring/TX</td>
+  		</tr>
+    	<tr>
+    		<td>___Reminders needed with meds<select name="remindersNeededWithMeds">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Blood pressure ___/___<select name="bloodPressure">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Range of motion<select name="rangeOfMotion">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Encourage physical activity daily if<select name="encouragePhysicalActivity">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>IADL Meal Prep</td>
+  		</tr>
+    	<tr>
+    		<td>___Prepare two meals<select name="prepareTwoMeals">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Take out trash<select name="takeOutTrash">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Wash dishes/tidy after meals<select name="washDishesTidyAfterMeals">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Clean kitchen<select name="cleanKitchen">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>IADL Home Management</td>
+  		</tr>
+    	<tr>
+    		<td>___Bathroom- tidy after bath<select name="bathroomTidyAfterBath">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Clean bathroom<select name="cleanBathroom">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Make bed<select name="makeBed">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Sweep<select name="sweep">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Dust bedroom/Living area<select name="dustBedroomLivingArea">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Keep free of clutter<select name="keepFreeOfClutter">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Tidy bedroom/living area<select name="tidyBedroomLivingArea">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>Other Tasks</td>
+  		</tr>
+    	<tr>
+    		<td>___Nail care<select name="nailCare">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+	</table>
+	<table>
+  		<tr bgcolor='#dddddd'>
+    		<th><center>Thursday<br>05/10/2018</center></th>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<th><center>Aide Name</center></th>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Mobility</td>
+  		</tr>
+    	<tr>
+    		<td>___Assist with ambulation<select name="assistWithAmbulation">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Bathing</td>
+  		</tr>
+    	<tr>
+    		<td>___Full body Bath<select name="fullBodyBath">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Shampoo hair<select name="shampooHair">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Special skin care<select name="specialSkinCare">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Dressing</td>
+  		</tr>
+    	<tr>
+    		<td>___Retrieve Clothes<select name="retrieveClothes">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Put on/Take off Clothes<select name="putOnTakeOffClothes">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Assist w/fasteners.zippers.buttons<select name="assistWithFastenersZippersButtons">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Put stocking/socks/shoes on/off<select name="putStockingSocksShoesOnOff">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Toileting</td>
+  		</tr>
+    	<tr>
+    		<td>___Assist with Toileting<select name="assistWithToileting">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Incontinence care<select name="incontinenceCare">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Clean Perineum<select name="cleanPerineum">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Change clothing/linens r/t incont<select name="changeClothingLinens">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>Medical Monitoring/TX</td>
+  		</tr>
+    	<tr>
+    		<td>___Reminders needed with meds<select name="remindersNeededWithMeds">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Blood pressure ___/___<select name="bloodPressure">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Range of motion<select name="rangeOfMotion">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Encourage physical activity daily if<select name="encouragePhysicalActivity">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>IADL Meal Prep</td>
+  		</tr>
+    	<tr>
+    		<td>___Prepare two meals<select name="prepareTwoMeals">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Take out trash<select name="takeOutTrash">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Wash dishes/tidy after meals<select name="washDishesTidyAfterMeals">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Clean kitchen<select name="cleanKitchen">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>IADL Home Management</td>
+  		</tr>
+    	<tr>
+    		<td>___Bathroom- tidy after bath<select name="bathroomTidyAfterBath">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Clean bathroom<select name="cleanBathroom">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Make bed<select name="makeBed">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Sweep<select name="sweep">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Dust bedroom/Living area<select name="dustBedroomLivingArea">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Keep free of clutter<select name="keepFreeOfClutter">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Tidy bedroom/living area<select name="tidyBedroomLivingArea">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>Other Tasks</td>
+  		</tr>
+    	<tr>
+    		<td>___Nail care<select name="nailCare">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+	</table>
+	<table>
+  		<tr bgcolor='#dddddd'>
+    		<th><center>Friday<br>05/11/2018</center></th>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<th><center>Aide Name</center></th>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Mobility</td>
+  		</tr>
+    	<tr>
+    		<td>___Assist with ambulation<select name="assistWithAmbulation">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Bathing</td>
+  		</tr>
+    	<tr>
+    		<td>___Full body Bath<select name="fullBodyBath">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Shampoo hair<select name="shampooHair">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Special skin care<select name="specialSkinCare">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Dressing</td>
+  		</tr>
+    	<tr>
+    		<td>___Retrieve Clothes<select name="retrieveClothes">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Put on/Take off Clothes<select name="putOnTakeOffClothes">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Assist w/fasteners.zippers.buttons<select name="assistWithFastenersZippersButtons">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Put stocking/socks/shoes on/off<select name="putStockingSocksShoesOnOff">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Toileting</td>
+  		</tr>
+    	<tr>
+    		<td>___Assist with Toileting<select name="assistWithToileting">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Incontinence care<select name="incontinenceCare">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Clean Perineum<select name="cleanPerineum">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Change clothing/linens r/t incont<select name="changeClothingLinens">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>Medical Monitoring/TX</td>
+  		</tr>
+    	<tr>
+    		<td>___Reminders needed with meds<select name="remindersNeededWithMeds">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Blood pressure ___/___<select name="bloodPressure">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Range of motion<select name="rangeOfMotion">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Encourage physical activity daily if<select name="encouragePhysicalActivity">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>IADL Meal Prep</td>
+  		</tr>
+    	<tr>
+    		<td>___Prepare two meals<select name="prepareTwoMeals">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Take out trash<select name="takeOutTrash">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Wash dishes/tidy after meals<select name="washDishesTidyAfterMeals">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Clean kitchen<select name="cleanKitchen">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>IADL Home Management</td>
+  		</tr>
+    	<tr>
+    		<td>___Bathroom- tidy after bath<select name="bathroomTidyAfterBath">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Clean bathroom<select name="cleanBathroom">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Make bed<select name="makeBed">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Sweep<select name="sweep">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Dust bedroom/Living area<select name="dustBedroomLivingArea">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Keep free of clutter<select name="keepFreeOfClutter">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Tidy bedroom/living area<select name="tidyBedroomLivingArea">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>Other Tasks</td>
+  		</tr>
+    	<tr>
+    		<td>___Nail care<select name="nailCare">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+	</table>
+	<table>
+  		<tr bgcolor='#dddddd'>
+    		<th><center>Saturday<br>05/12/2018</center></th>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<th><center>Aide Name</center></th>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Mobility</td>
+  		</tr>
+    	<tr>
+    		<td>___Assist with ambulation<select name="assistWithAmbulation">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Bathing</td>
+  		</tr>
+    	<tr>
+    		<td>___Full body Bath<select name="fullBodyBath">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Shampoo hair<select name="shampooHair">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Special skin care<select name="specialSkinCare">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Dressing</td>
+  		</tr>
+    	<tr>
+    		<td>___Retrieve Clothes<select name="retrieveClothes">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Put on/Take off Clothes<select name="putOnTakeOffClothes">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Assist w/fasteners.zippers.buttons<select name="assistWithFastenersZippersButtons">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Put stocking/socks/shoes on/off<select name="putStockingSocksShoesOnOff">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Toileting</td>
+  		</tr>
+    	<tr>
+    		<td>___Assist with Toileting<select name="assistWithToileting">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Incontinence care<select name="incontinenceCare">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Clean Perineum<select name="cleanPerineum">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Change clothing/linens r/t incont<select name="changeClothingLinens">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>Medical Monitoring/TX</td>
+  		</tr>
+    	<tr>
+    		<td>___Reminders needed with meds<select name="remindersNeededWithMeds">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Blood pressure ___/___<select name="bloodPressure">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Range of motion<select name="rangeOfMotion">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Encourage physical activity daily if<select name="encouragePhysicalActivity">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>IADL Meal Prep</td>
+  		</tr>
+    	<tr>
+    		<td>___Prepare two meals<select name="prepareTwoMeals">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Take out trash<select name="takeOutTrash">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Wash dishes/tidy after meals<select name="washDishesTidyAfterMeals">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Clean kitchen<select name="cleanKitchen">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>IADL Home Management</td>
+  		</tr>
+    	<tr>
+    		<td>___Bathroom- tidy after bath<select name="bathroomTidyAfterBath">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Clean bathroom<select name="cleanBathroom">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Make bed<select name="makeBed">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Sweep<select name="sweep">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Dust bedroom/Living area<select name="dustBedroomLivingArea">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Keep free of clutter<select name="keepFreeOfClutter">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Tidy bedroom/living area<select name="tidyBedroomLivingArea">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>Other Tasks</td>
+  		</tr>
+    	<tr>
+    		<td>___Nail care<select name="nailCare">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+	</table>
+	<table>
+  		<tr bgcolor='#dddddd'>
+    		<th><center>Sunday<br>05/13/2018</center></th>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<th><center>Aide Name</center></th>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Mobility</td>
+  		</tr>
+    	<tr>
+    		<td>___Assist with ambulation<select name="assistWithAmbulation">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Bathing</td>
+  		</tr>
+    	<tr>
+    		<td>___Full body Bath<select name="fullBodyBath">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Shampoo hair<select name="shampooHair">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Special skin care<select name="specialSkinCare">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Dressing</td>
+  		</tr>
+    	<tr>
+    		<td>___Retrieve Clothes<select name="retrieveClothes">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Put on/Take off Clothes<select name="putOnTakeOffClothes">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Assist w/fasteners.zippers.buttons<select name="assistWithFastenersZippersButtons">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Put stocking/socks/shoes on/off<select name="putStockingSocksShoesOnOff">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>ADL Toileting</td>
+  		</tr>
+    	<tr>
+    		<td>___Assist with Toileting<select name="assistWithToileting">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Incontinence care<select name="incontinenceCare">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Clean Perineum<select name="cleanPerineum">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Change clothing/linens r/t incont<select name="changeClothingLinens">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>Medical Monitoring/TX</td>
+  		</tr>
+    	<tr>
+    		<td>___Reminders needed with meds<select name="remindersNeededWithMeds">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Blood pressure ___/___<select name="bloodPressure">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Range of motion<select name="rangeOfMotion">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Encourage physical activity daily if<select name="encouragePhysicalActivity">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>IADL Meal Prep</td>
+  		</tr>
+    	<tr>
+    		<td>___Prepare two meals<select name="prepareTwoMeals">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Take out trash<select name="takeOutTrash">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Wash dishes/tidy after meals<select name="washDishesTidyAfterMeals">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Clean kitchen<select name="cleanKitchen">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>IADL Home Management</td>
+  		</tr>
+    	<tr>
+    		<td>___Bathroom- tidy after bath<select name="bathroomTidyAfterBath">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Clean bathroom<select name="cleanBathroom">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Make bed<select name="makeBed">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Sweep<select name="sweep">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Dust bedroom/Living area<select name="dustBedroomLivingArea">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Keep free of clutter<select name="keepFreeOfClutter">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+    	<tr>
+    		<td>___Tidy bedroom/living area<select name="tidyBedroomLivingArea">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+  		<tr bgcolor='#dddddd'>
+    		<td>Other Tasks</td>
+  		</tr>
+    	<tr>
+    		<td>___Nail care<select name="nailCare">
+            	<option value="BLANK"></option>
+                <option value="YES">Yes</option>
+            </td>
+  		</tr>
+	</table>
