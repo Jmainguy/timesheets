@@ -44,6 +44,24 @@ func listServices() (SL []Service) {
     return SL
 }
 
+func listServiceGroups() (SGL []ServiceGroup) {
+    var SG ServiceGroup
+	db, err := sql.Open("mysql", "timesheet:yaya@tcp(phy01.standouthost.com)/timesheet?charset=utf8")
+	check(err)
+	// query
+	rows, err := db.Query("select distinct groupname from services order by groupname")
+	check(err)
+	for rows.Next() {
+        err := rows.Scan(&SG.GroupName)
+        check(err)
+        SGL = append(SGL, SG)
+    }
+    check(err)
+    rows.Close()
+	db.Close()
+    return SGL
+}
+
 func addClientSQL(firstname, lastname, middlename string) {
 
 	db, err := sql.Open("mysql", "timesheet:yaya@tcp(phy01.standouthost.com)/timesheet?charset=utf8")

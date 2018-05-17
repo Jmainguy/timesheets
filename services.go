@@ -57,3 +57,14 @@ func listServicesPage(w http.ResponseWriter, r *http.Request) {
     }
 }
 
+func timeSheetPage(w http.ResponseWriter, r *http.Request) {
+    fmt.Println("method:", r.Method)
+    if r.Method == "GET" {
+        ts := timeSheet{}
+        ts.Services = listServices()
+        ts.ServiceGroups = listServiceGroups()
+        t, _ := template.ParseFiles("web/timesheet.gtpl")
+        t.Execute(w, ts)
+    }
+}
+

@@ -1,2 +1,0 @@
-# timesheets
-A timesheet app

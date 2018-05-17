@@ -9,5 +9,6 @@ func main() {
     http.HandleFunc("/listClients", listClientsPage)
     http.HandleFunc("/addService", addServicesPage)
     http.HandleFunc("/listServices", listServicesPage)
+    http.HandleFunc("/", timeSheetPage)
     http.ListenAndServe(":8000", nil)
 }

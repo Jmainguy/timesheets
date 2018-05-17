@@ -12,3 +12,11 @@ type Service struct {
     GroupName string
 }
 
+type ServiceGroup struct {
+    GroupName string
+}
+
+type timeSheet struct {
+    Services []Service
+    ServiceGroups []ServiceGroup
+}
